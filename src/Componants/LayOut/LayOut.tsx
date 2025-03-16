@@ -19,7 +19,7 @@ const LayOut = ({data,serch}:IProps) => {
                     <Button key={item.name} className="btn-filter flex align-items-center"
                     onClick={()=>data(item.type)}
                     >
-                    {item.type}
+                    {item.type.toLocaleUpperCase()}
                 </Button>
                 ))
                 }
