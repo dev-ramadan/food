@@ -1,0 +1,15 @@
+.price-btn{
+    width: 59px;
+    height: 25px;
+    border-radius: 5px;
+    color: white;
+    background-color: #FF4343;
+}
+.btn-filter{
+    width: fit-content;
+    height: 30px;
+    padding:3px 7px;
+    border-radius: 5px;
+    color: white;
+    background-color: #FF4343; 
+}

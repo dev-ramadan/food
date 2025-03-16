@@ -1,0 +1,27 @@
+.pirant{
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+  margin:0 auto;
+}
+  .search input{
+      background-color: transparent;
+      border: 1px solid red;
+      color: white;
+      border-radius: 5px;
+      height: 40px;
+      font-size: 16px;
+      padding: 0 10px;
+      &::placeholder {
+        color: white;
+      }
+    }
+
+  @media (0 < width < 600px) {
+    .pirant{
+        flex-direction: column;
+        height: 120px;  
+    } 
+  }
