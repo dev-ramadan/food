@@ -8,7 +8,7 @@ const Nav = ({serch}:IProps) => {
         <div className='pirant container mx-auto'>
             <div className="logo"><img src="logo.svg" alt="logo" /></div>
             <div className="search">
-                <input type="text" placeholder="search" 
+                <input type="text" placeholder="Search Food" 
                 onChange={(e) => serch(e.target.value.toLowerCase())}
                 />
             </div>

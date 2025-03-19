@@ -27,7 +27,7 @@ const App = () => {
     })
   return (
     <>
-  <LayOut data={setSelectItem} serch={setSerchItem}/>
+  <LayOut data={setSelectItem} search={setSerchItem} selected={selectItem}/>
   <Cart data={filterData}/>
     </>
   )

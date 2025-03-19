@@ -8,8 +8,13 @@
 .btn-filter{
     width: fit-content;
     height: 30px;
-    padding:3px 7px;
+    padding:5px 10px;
     border-radius: 5px;
     color: white;
     background-color: #FF4343; 
+    text-transform: capitalize;
+}
+.active{
+    background-color: #f22f2f;
+    outline: 1px solid white;
 }

@@ -4,22 +4,23 @@ import Nav from "../Nav/Nav"
 import './layOyt.css'
 
 interface IProps{
-    data:(type:string)=>void
-    serch:(name:string)=>void
+    data:(type:string)=>void;
+    search:(name:string)=>void;
+    selected:string;
 }
-const LayOut = ({data,serch}:IProps) => {
-
+const LayOut = ({data,search,selected}:IProps) => {
     return (
         <>
         <div className="layout">
-        <Nav serch={serch} />
+        <Nav serch={search} />
             <div className="flex justify-center gap-2.5 mt-10">
                 {
                 filterBtns.map((item) => (
-                    <Button key={item.name} className="btn-filter flex align-items-center"
+                    <Button key={item.name} 
                     onClick={()=>data(item.type)}
+                    className={`btn-filter ${selected === item.type ? 'active ' : ''}flex align-items-center`}
                     >
-                    {item.type.toLocaleUpperCase()}
+                    {item.type}
                 </Button>
                 ))
                 }
