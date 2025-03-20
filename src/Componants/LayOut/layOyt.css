@@ -1,5 +1,8 @@
 .layout{
-    height: 241px;
+    height: 230px;
     background-color:#323334;
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

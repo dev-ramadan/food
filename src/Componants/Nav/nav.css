@@ -1,10 +1,7 @@
 .pirant{
-  height: 140px;
+  width: 90%;
   display: flex;
   justify-content: space-between;
-  padding: 16px;
-  align-items: center;
-  margin:0 auto;
 }
   .search input{
       background-color: transparent;
@@ -22,6 +19,7 @@
   @media (0 < width < 600px) {
     .pirant{
         flex-direction: column;
-        height: 120px;  
+        height: 80px;  
+        align-items: center;
     } 
   }
