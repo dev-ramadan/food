@@ -13,8 +13,14 @@
     color: white;
     background-color: #FF4343; 
     text-transform: capitalize;
+    transform: translateY(35px);
 }
 .active{
     background-color: #f22f2f;
     outline: 1px solid white;
 }
+@media (0 < width < 600px) {
+    .btn-filter{
+    transform: translateY(0);
+    }
+  }
